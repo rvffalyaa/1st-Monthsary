@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First Monthsary</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffb6c1, #ff69b4); /* Pink gradient background */
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .heart {
+            position: absolute;
+            font-size: 24px;
+            color: #ff69b4; /* Pink color for falling hearts */
+            animation: fall linear infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .container {
+            z-index: 2;
+            text-align: center;
+            max-width: 90%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+            color: #ff69b4; /* Pink color for the text */
+        }
+        
+        .flower {
+            width: 150px;
+            height: auto;
+            margin: 20px 0;
+        }
+        
+        .gif {
+            width: 200px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .letter {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Increased opacity for better contrast */
+            border-radius: 10px;
+            font-style: italic;
+            color: #8B0000; /* Dark red for better readability */
+        }
+        
+        .plan {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #8B0000; /* Dark red for better readability */
+        }
+        
+        .plan h2 {
+            color: #ff69b4;
+            margin-top: 30px;
+            font-family: 'Dancing Script', cursive; /* Cursive font */
+        }
+        
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .plan li {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8); /* Increased opacity for better contrast */
+            border-radius: 10px;
+            color: #8B0000; /* Dark red for better readability */
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .letter, .plan {
+                font-size: 1em;
+            }
+            .flower, .gif {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+    <div class="container">
+        <h1>Happy First Monthsary, baby! 💖</h1>
+        <img src="https://i.imgur.com/6DzDn3R.png" alt="Pink Carnation Flower" class="flower">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmxxMW1uYndxZnM2ZnF5djd3NXJ1eDAyNjlhb3kzc2JidWt4dWd6YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ANjMpBvC9LeRUopsoU/giphy.gif" alt="Romantic Heart GIF" class="gif">
+        
+        <!-- Auto-playing cute song -->
+        <audio autoplay loop>
+            <source src="https://drive.google.com/uc?export=download&id=1c1-4yX88D0PKDkar9XImlTbZ9bb3jdsh" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div class="letter">
+            <h2>A Letter Just for You</h2>
+            <p>My love of my life, baby.</p>
+            <p>As I doing code and making this letter for you, here i am thinking about our first month together, my heart overflows with joy and gratitude. From the moment we met, you've brought so much light and love into my life. Every laugh we share, every quiet moment, every adventure we embark on – they all mean the world to me.</p>
+            <p>Today marks our first monthsary, and I can't wait to celebrate it with you. You've made me the happiest person alive, and I promise to cherish every second we spend together. You're my everything, my love, my best friend.</p>
+            <p>Thank you for being you. I love you more than words can express.</p>
+            <p>Forever yours,<br>louice</p>
+        </div>
+
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXA3bmF6Mmx5cmNmeDl3bWFpMTA3Zm0yb2tmeTh3aGRxOXlkZzQxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oLVaYwiPrVOOU4SL2b/giphy.gif" alt="Romantic Heart GIF" class="gif">
+        <div class="plan">
+
+            <h2>Our Romantic Date Plan</h2>
+            <ul>
+                <li><strong>Date:</strong> January 29, 2026</li>
+                <li><strong>Time:</strong> 7:00 PM - 10:00 PM</li>
+                <li><strong>Photobooth:</strong> Life4Cuts (Don't miss our monthly Photobooth.)</li>
+                <li><strong>Place:</strong> Ayala Malls, Makimura Ramen. (This is our Dinner.)</li>
+                <li><strong>Cinema:</strong> We're going to watch silent hill.</li>
+                <li><strong>P.S:</strong> Please wear whatever makes you feel most comfortable and beautiful (I'm wearing a black polo and baggy denim pants.) Don't worry about anything else. All you need to do is get ready, stay pretty. See ya!</li>
+            </ul>
+            <p>Can't wait to make this day unforgettable! I love you more than words can say. ❤️</p>
+        </div>
+    </div>
+
+    <script>
+        // Generate falling hearts
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 2 + 's'; // Random fall speed
+            document.getElementById('hearts').appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 5000); // Remove after animation
+        }
+        
+        // Create hearts every 300ms
+        setInterval(createHeart, 300);
+    </script>
+</body>
+</html>
